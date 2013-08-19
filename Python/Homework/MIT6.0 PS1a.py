@@ -2,7 +2,8 @@
 #Name: Mark O'Brien
 #Collaborators:  probably Google
 #Time Spent:  4hr
-
+#This exercise calculates the amount paid and amount owed on a debt given an initial
+#balance, interest rate, and minimum percentage of payment on the principle.
 Balanc=float(input("What is the outstanding balance?  "))
 AnnInt=float(input("What is the Annual Interest Rate as decimal?  "))
 MinRat=float(input("What is the min monthly payment rate as decimal?  "))
@@ -14,7 +15,7 @@ for month in range(12):
     Balanc=round(Balanc-PriPai,2)                       #Balance after principle paid
     month=month+1
     print("Month: ", round(month,2))
-    print("Minimm monthly payment: ",round(MinMPa,2))
+    print("Minimum monthly payment: ",round(MinMPa,2))
     print("Principle paid: ",round(PriPai,2))
     print("Remaining balance: ",round(Balanc,2))
     TotPai=round(TotPai+PriPai+IntPai,2)
