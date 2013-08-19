@@ -18,3 +18,6 @@ while Chg_Bal>=0 and month<=12:
         print(round(Chg_Bal,2))
         Payment+=10
         month+=1
+
+
+http://www.snip2code.com/Snippet/2702/MIT-6-00SC--Problem-Set-1b
