@@ -7,8 +7,8 @@
 
 balanc = float(input("What is the outstanding balance?  "))
 annual_int = float(input("What is the Annual Interest Rate as decimal?  "))
-chg_bal = balanc
-monthly_int = annual_int / 12
+chg_bal = balanc                    #used so not to lose initial valuse 
+monthly_int = annual_int / 12       #monthly interest broken down from annual
 monthly_bal=0
 payment = 0
 while chg_bal > 0:
@@ -17,7 +17,7 @@ while chg_bal > 0:
             chg_bal = ((1 + monthly_int) * chg_bal) - payment
             if chg_bal <= 0:
                 break
-    if chg_bal > 0:
+    if chg_bal > 0:                 #reset the balance and add more monthly payment
         payment += 10
         chg_bal = balanc
     else:
